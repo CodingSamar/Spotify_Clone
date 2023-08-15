@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+body{
+    background-color: #3b3a30;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    font-family: 'ubuntu',sans-serif;
+}
+
+nav ul{
+
+    height: 65px;
+    display: flex;
+    list-style-type: none;
+    background-color: black;
+    align-items: center;
+    color: white;
+    gap: 30px;
+    padding-left: 0 ;
+    margin-bottom: 0;
+
+   
+}
+
+.brand img{
+    height: 40px 
+}
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.container{
+    height: 70vh;
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-family: 'varela round',sans-serif  ;
+    max-width: 100%;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url("sidhu.png");
+    
+
+}
+
+.bottom{
+    position: sticky; /*learned*/
+    background-color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.icons{
+    margin-top: 14px;
+    cursor: pointer;   /*learned */
+    
+}
+
+.songItem{
+    position: relative;
+    height: 50px;
+    min-width: 100px;
+    max-width: 450px;
+    display: flex;
+    background-color: white;  
+    justify-content: space-around;
+    align-items: center;
+    color: black; 
+    margin: 12px 0;
+    border-radius: 34px;
+    flex-wrap: nowrap;
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 1 ;
+}
+
+.songItem img{
+    min-width: auto; 
+    max-width: 34px;
+     margin: 0px 23px;
+     border-radius: 20px;
+}
+
+.timestamp{
+    padding: 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 0 0 70px ; 
+   padding-top: 0;
+   cursor: pointer;
+}
+
+#masterplay:hover{
+    background-color: silver;
+    
+}
+
+@media(max-width<=480px){
+    body{
+        height: auto;
+        width: auto;
+    }
+    /* .container{
+        
+    
+    } */
+    .songItem img{
+        flex-wrap: wrap;
+        margin-left: auto;
+    }
+    .songItem{
+        max-width: 50px;
+       
+    }
+
+    .songlistplay{
+         max-width: 1px;
+         display: flex;
+         flex-wrap: wrap;
+         margin-right: auto;
+    } 
+    
+}
